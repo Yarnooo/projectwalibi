@@ -43,7 +43,7 @@ client.on("guildMemberAdd", member => {
 client.on("ready", async () => {
 
     console.log(`${client.user.username} is online!`);
-    client.user.setActivity("Project Walibi", { type: "WATCHING" })
+    client.user.setActivity("Project Walibi", { type: "PLAYING" })
 
 });
 
