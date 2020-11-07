@@ -9,7 +9,6 @@ module.exports.run = async (bot, message, args) => {
         .setColor("ff0000")
         .setThumbnail(`${message.guild.iconURL({ size: 4096 })}`)
         .setTitle("Serverinfo")
-        .setDescription("Dit is de info van de Project Walibi discord server.")
         .addField("ID:", `${message.guild.id}`)
         .addField("Regio:", `${message.guild.region}`, true)
         .addField("Bots:", `${message.guild.members.cache.filter(m => m.user.bot).size}`, true)
