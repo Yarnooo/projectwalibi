@@ -3,7 +3,7 @@ const moment = require("moment")
 
 module.exports.run = async (bot, message, args) => {
 
-    var member = message.guild.member(message.mentions.users.first() || clientInformation.userAgent.cache.get(args[0]));
+    var member = message.guild.member(message.mentions.users.first() || client.users.cache.get(args[0]));
     if (!member) member = message.member;
 
     var roles = member.roles.cache.size - 1;

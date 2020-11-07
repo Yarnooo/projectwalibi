@@ -22,6 +22,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Gejoined op:", `${moment(message.member.joinedAt).format('LL')}`)
         .addField("Website:", "https://projectwalibi.nl/")
         .addField(`Rollen [${roles}]:`, `${message.guild.roles.cache.map(r => r).join(" ")}`)
+        .setFooter("YΛЯПӨӨӨ#1673")
         .setTimestamp()
 
     message.channel.send(embed);
@@ -29,5 +30,5 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "info"
+    name: "serverinfo"
 }
