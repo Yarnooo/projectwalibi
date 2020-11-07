@@ -17,5 +17,5 @@ return message.channel.send(botEmbed);
 }
     
 module.exports.help = {
-    name: "spelerinfo"
+    name: "spelerinfoold"
 }
