@@ -26,6 +26,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Account gemaakt:", `${moment(member.user.createdAt).format("LL")}`)
     .addField("Server gejoined:", `${moment(member.joinedAt).format('LL')}`)
     .addField(`Rollen [${roles}]`, `${roleNames}`)
+    .setFooter("YΛЯПӨӨӨ#1673")
     .setTimestamp()
 
 message.channel.send(embed);
