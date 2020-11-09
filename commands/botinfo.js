@@ -6,10 +6,8 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("**Bot info**")
         .setDescription("Dit is de info van de Project Walibi bot.")
         .setColor("#ff0000")
-        .addField("🏷 ID:", `${member.id}`, true)
         .addField("🤖 Bot naam:", bot.user.username)
-        .addField("📅 Bot aangemaakt", `${moment(bot.user.createdAt).format("LL")}`)
-        .addField("📆 Server gejoind:", `${moment(bot.joinedAt).format('LL')}`)
+        .addField("📅 Bot aangemaakt:", "06-05-2020")
         .setFooter("YΛЯПӨӨӨ#1673")
         .setTimestamp()
 
